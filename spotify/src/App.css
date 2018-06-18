@@ -1,3 +1,7 @@
+body{
+  background-color: #222;
+  color: white;
+}
 .App {
   text-align: center;
 }
@@ -26,3 +30,48 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+#search {
+  padding-top: 5px;
+  border: none;
+  background-color:  rgb(53, 51, 51);
+  color: white;
+  display:inline-block; 
+  margin:0;
+}
+
+#search:after {
+  display:block;
+  content: '';
+  border-bottom: 3px solid greenyellow;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in;
+  transform-origin:  0% 50%;
+}
+#search:focus {
+  outline: none;
+  /* border: 1px solid greenyellow; */
+}
+#search.focus:after {
+  transform: scaleX(1);
+}
+
+.Modal {
+  background: #3E363F;
+  border-radius: 2px;
+  padding: 20px;
+  width: 30%;
+  height: 200px;
+  position: fixed;
+  top: center;
+  left: 32.5%;
+ 
+}
+.Modalform{
+  display: flex;
+ justify-content: space-around;
+  flex-direction: column;
+  align-content: space-around;
+  height: 100%;
+}
+/* .fromLeft:after{   } */
