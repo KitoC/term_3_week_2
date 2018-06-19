@@ -60,6 +60,7 @@ class App extends Component {
     if (this.state.addNewSong) {
       modal = (<Modal onSubmit={this.newSong} />);
     }
+    
     return (
       <div className="App">
       
