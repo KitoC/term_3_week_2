@@ -11,7 +11,7 @@ const user_schema = mongoose.Schema({})
 //  Tell passport to use the email address as the username
 user_schema.plugin(passport, { usernameField: 'email' })
 
-console.log(user_schema)
+// console.log(user_schema)
 
 // Create a user model from the User schema
 module.exports = mongoose.model('User', user_schema)
